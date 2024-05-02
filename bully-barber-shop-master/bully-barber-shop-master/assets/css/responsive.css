@@ -1,0 +1,446 @@
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/* Responsive for large than 575px screen */
+
+@media (min-width: 575px) {
+
+  /* CUSTOM PROPERTY */
+
+  :root {
+
+    /* typography */
+
+    --fs-40: 6rem;
+  }
+
+  /* REUSED STYLE */
+
+  .container,
+  .header-top {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .btn {
+    padding: 13px 40px;  
+  }
+
+  .h2 {
+    --fs-30: 3.5rem;
+  }
+
+  /* HEADER */
+
+  .header-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 600px;
+    z-index: 4;
+    background-color: var(--white);
+    border-radius: 0 0 20px 20px;
+  }
+
+  .header-top-item:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-top-item ion-icon {
+    font-size: 18px;
+    color: var(--indian-yellow);
+    --ionicon-stroke-width: 50px;
+  }
+
+  .header-top-item .item-title {
+    color: var(--eerie-black-1);
+    font-weight: var(--fw-500);
+  }
+
+  .header-top-item .item-link {
+    transition: var(--transition-1);
+  }
+
+  .header-top-item .item-link:is(:hover, :focus) {
+    color: var(--indian-yellow);
+  }
+
+  .header-top-list {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .logo .span {
+    font-size: 1.4rem;
+  }
+
+  /* HERO */
+
+  .hero {
+    padding-block-start: calc(var(--section-padding) + 80px);
+  }
+
+  .hero-text {
+    font-size: var(--fs-18);
+  }
+
+  /* PRICING */
+
+  .filter-btn .btn-icon {
+    display: block;
+    font-size: 55px;
+    line-height: 1;
+    margin-block-end: 5px;
+  }
+
+  .pricing-card {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .pricing-card .wrapper {
+    order: 0;
+  }
+
+  .pricing-card .card-price {
+    align-self: flex-start;
+    line-height: 1.6;
+  }
+
+  /* GALLERY */
+
+  .gallery .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* APPOINTMENT */
+
+  .appoin-card .card-content {
+    padding-inline: 50px;
+  }
+
+  /* FOOTER */
+
+  .footer .email-field {
+    margin-block-end: 0;
+    text-align: left;
+    font-size: var(--fs-18);
+    padding: 10px 15px;
+    padding-inline-end: 210px;
+  }
+
+  .footer .btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    width: max-content;
+  }
+
+  .footer-link-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-list:is(:nth-child(3), :nth-child(4)) {
+    grid-column: 1 / 3;
+  }
+
+  .blog-card .card-title {
+    --fs-14: 1.7rem;
+    max-width: 25ch;
+  }
+
+}
+
+/* Responsive for large than 768px screen */
+
+@media (min-width: 768px) {
+
+    /* CUSTOM PROPERTY */
+  
+    :root {
+  
+      /* typography */
+  
+      --fs-40: 8rem;
+    }
+  
+    /* REUSED STYLE */
+  
+    .container {
+      max-width: 720px;
+    }
+  
+    .h2 {
+      --fs-30: 4rem;
+    }
+  
+    .section-text {
+      max-width: 50ch;
+      margin-inline: auto;
+    }
+  
+    /* HEADER */
+  
+    .header-top {
+      max-width: 780px;
+    }
+  
+    /* SERVICES */
+  
+    .service .grid-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    /* PRICING */
+  
+    .pricing-tab-container {
+      padding: 40px;
+    }
+  
+    .pricing-card .wrapper {
+      margin-inline-end: auto;
+    }
+  
+    /* GALLERY */
+  
+    .gallery .section-text {
+      margin-inline: 0;
+    }
+  
+    .gallery-card .card-content {
+      inset: 30px;
+    }
+  
+    /* APPOINTMENT */
+  
+    .appoin-card .card-banner {
+      display: block;
+    }
+  
+    .appoin-card {
+      display: flex;
+    }
+  
+    /* FOOTER */
+  
+    .footer-list:is(:nth-child(3), :nth-child(4)) {
+      grid-column: auto;
+    }
+  
+  }
+  
+  /* Responsive for large than 992px screen */
+  
+  @media (min-width: 992px) {
+  
+    /* CUSTOM PROPERTY */
+  
+    :root {
+  
+      /* typography */
+  
+      --fs-40: 10rem;
+  
+    }
+  
+    /* REUSED STYLE */
+  
+    .container { 
+      max-width: 960px; 
+    }
+  
+    /* HEADER */
+  
+    .nav-toggle-btn { 
+      display: none; 
+    }
+  
+    .header-top { 
+      max-width: 1020px; 
+    }
+  
+    .header-bottom { 
+      padding-block: 20px; 
+    }
+  
+    .navbar,
+    .navbar-list,
+    .navbar-item { 
+      all: unset; 
+    }
+  
+    .navbar-list,
+    .header .btn { 
+      display: flex; 
+    }
+  
+    .navbar-link { 
+      padding-inline: 10px; 
+    }
+  
+    /* HERO */
+  
+    .hero {
+      --section-padding: 150px;
+      padding-block-start: calc(var(--section-padding) + 100px);
+    }
+  
+    .hero-title,
+    .hero-text { 
+      max-width: 600px; 
+    }
+  
+    /* SERVICE */
+  
+    .service .grid-list { 
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  
+    /* PRICING */
+  
+    .pricing .grid-list { 
+      grid-template-columns: 1fr 1fr; 
+    }
+  
+    .pricing-card { 
+      height: 100%; 
+    }
+  
+    .pricing-card .card-banner { 
+      flex-shrink: 0; 
+    }
+  
+    /* GALLERY */
+  
+    .gallery .title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  
+    .gallery .section-text { 
+      margin-block-end: 0; 
+    }
+  
+    /* APPOINTMENT */
+  
+    .appoin-card .input-wrapper {
+      display: flex;
+      gap: 20px;
+    }
+  
+    /* FOOTER */
+  
+    .footer-brand {
+      display: flex;
+      align-items: center;
+    }
+  
+    .footer .logo {
+      padding: 60px 70px;
+      border-block-end: none;
+      border-inline-end: 1px solid var(--white_10);
+    }
+  
+    .footer .input-wrapper {
+      flex-grow: 1;
+      margin-inline: 70px;
+    }
+  
+  }
+  
+  /* Responsive for large than 1200px screen */
+  
+  @media (min-width: 1200px) {
+  
+    /* CUSTOM PROPERTY */
+  
+    :root {
+  
+      /* typography */
+  
+      --fs-40: 11rem;
+  
+      /* spacing */
+  
+      --section-padding: 120px
+    }
+  
+    /* REUSED STYLE */
+  
+    .container {
+      max-width: 1200px;
+    }
+  
+    /* HEADER */
+  
+    .header-top {
+      max-width: 1260px;
+    }
+  
+    .header-top-list {
+      gap: 30px;
+    }
+  
+    .header-top-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .header-top-item:nth-child(2) {
+      margin-inline-end: auto;
+    }
+  
+    /* HERO */
+  
+    .hero {
+      background-position: left;
+      padding-block-end: 200px;
+    }
+  
+    .hero-title,
+    .hero-text {
+      max-width: 680px;
+    }
+  
+    /* PRICING */
+  
+    .filter-btn  {
+      max-width: 178px;
+    }
+  
+    /* GALLERY */
+  
+    .gallery .grid-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    /* APPOINTMENT */
+  
+    .appoin-card .card-content {
+      flex-grow: 1;
+    }
+  
+    /* FOOTER */
+  
+    .footer-link-box {
+      grid-template-columns: 0.5fr 0.5fr 1fr 0.8fr;
+    }
+  
+    /* BACK TO TOP */
+  
+    .back-top-btn {
+      padding: 15px;
+    }
+  }
